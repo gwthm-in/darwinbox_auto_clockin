@@ -1,6 +1,7 @@
 # darwinbox_auto_clockin
 ## Python script to automatically clock in darwinbox. Uses Mac OSX launchctl to run every 10  minutes. One it clocks in, it will send message to your mobile too. 
 
+<hr>
 ###### Author: Gowtham Sai
 ###### Website: https://gowtham-sai.com
 ###### Aritcle: blog.gowtham-sai.com (Will be updated soon)
@@ -13,6 +14,7 @@
 ######		-- No/Yes. (You can set cronjob if you want in your mac/linux) / (Task Schedular in Windows Box)
 ######
 ###### Sigstamp: 7h3 !n5|d3r
+<hr>
 #
 #
 #
@@ -34,7 +36,8 @@ Open [WAY2SMS.py](WAY2SMS.py) file,
     
     23.    username = 'MOBILE NUMBER HERE'
     24.    password = 'Way2SMS PASSWORD HERE'
-##### save darwin.py and way2sms.py files. 
+
+#### save darwin.py and way2sms.py files. 
 #
 #
 #
@@ -58,11 +61,11 @@ replace the above line with your path to darwin.py
 
 ` Now you need to launch the job. `
         
-        2. launchctl load com.darwinbox.Helper.plist    
+       $ launchctl load com.darwinbox.Helper.plist    
     
 ` Now you need to start the job. `
 
-        3. launchctl start com.darwinbox.Helper.plist
+        $ launchctl start com.darwinbox.Helper.plist
 
 # All done. Now, you don't need to worry about darwinbox clock in. Forget it. 
 ##
@@ -105,5 +108,3 @@ How to check logs:
 
 * You can chceck logs from /var/log/darwinbox.log
 * You can check error form  /var/log/darwinbox.error.log
-
-
