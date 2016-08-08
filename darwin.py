@@ -93,7 +93,7 @@ try:
 						if log != False:	
 							sys.stdout.write(time.ctime()+" [INFO] - Sending Notification to mobile - %s\n"%mobile)		
 							try:
-								Way2SMS.send(mobile, time.ctime()+": %s - %s."%("Info","Sucessfully Clocked In. %s" % resp.code,))
+								Way2SMS.send(mobile, time.ctime()+": %s - %s."%("Info","Sucessfully Clocked In."))
 							except Exception as e:
 								sys.stdout.write(time.ctime()+" [FATAL] - Moblie Notification Failed. %s\n"%e.message)
 								sys.stderr.write(time.ctime()+" [FATAL] - Moblie Notification Failed. %s\n"%e.message)
