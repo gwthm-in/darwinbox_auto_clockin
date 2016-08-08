@@ -88,7 +88,7 @@ try:
 					data = json.loads(br.open_novisit(xhr).readlines()[-1])
 					if not data.has_key('error'):
 						sys.stdout.write(time.ctime()+" [INFO] - User Sucessfully Clocked In.\n")
-						ok("Sucessfully Clocked In. %s" % resp.code,"Info")
+						ok("Sucessfully Clocked In. ","Info")
 						log = Way2SMS.login()
 						if log != False:	
 							sys.stdout.write(time.ctime()+" [INFO] - Sending Notification to mobile - %s\n"%mobile)		
