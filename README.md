@@ -32,7 +32,7 @@ Open [darwin.py](darwin.py) file and Change Your Email id, Phone Number, Passwor
     48.    password = 'YOUR PASSWORD HERE'
     49.    mobile = "MOBILE NUMBER HERE"
         
-Open [WAY2SMS.py](WAY2SMS.py) file, 
+Open [WAY2SMS.py](Way2SMS.py) file, 
     
     23.    username = 'MOBILE NUMBER HERE'
     24.    password = 'Way2SMS PASSWORD HERE'
@@ -47,10 +47,10 @@ Open [WAY2SMS.py](WAY2SMS.py) file,
 >  Absolutepath: `/Users/{YOUR USERNAME}/Documents/work/darwin/ `
 #
 
-##### If you want to keep this somewhere, please chagne line 19 in com.darwinbox.Helper.plist #
+##### Please chagne line 19 in com.darwinbox.Helper.plist Change my username GowthamSai to yours. #
 #
 
-        <string>/Users/GowthamSai/Documents/work/darwin/darwin.py</string>
+      19.  <string>/Users/GowthamSai/Documents/work/darwin/darwin.py</string>
 replace the above line with your path to darwin.py
 
 #
