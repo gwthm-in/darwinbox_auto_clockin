@@ -20,8 +20,8 @@ url = 'http://site23.way2sms.com/content/index.html?'
 #br.select_form(nr=0)
 stamp = "\n        +=======================================+\n        |..........Way2SMS Msg Tool v 1.........|\n        +---------------------------------------+\n        |#Author: 7H3 !N5|D3R                   |\n        |#Contact: www.fb.com/Gowtham95india    |\n        |#Date: 10/09/2014                      |\n        |#This tool is made for pentesting.     |\n        |#Changing the Description of this tool |\n        |Won't make you the coder ^_^ !!!       |\n        |#Respect Coderz Plz ^_^                |\n        |#I Take No Responsibilities For The    |\n        |  Use Of This Program !                |\n        +=======================================+\n        |.........  Way2SMS Automation .........|\n        +---------------------------------------+\n"
 #print stamp
-username = 'username_goes_here'
-password = 'password_goes_here'
+username = '9010101046'
+password = '22195'
 token = ''
 
 
