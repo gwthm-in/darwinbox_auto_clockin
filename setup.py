@@ -36,7 +36,7 @@ def main():
 	darwinpath = os.path.join(filedir,'darwin.py')
 	msgfile = open(msgpath,'r').readlines()
 	darwinfile = open(darwinpath,'r').readlines()
-	if 'username_goes_here' in msgfile or 'password_goes_here' in msgfile: 
+	if 'mobile_number_goes_here' in msgfile or 'password_goes_here' in msgfile: 
 		mylog.log("FATAL", "Please modify way2sms.py and insert your mobile number and password before continuing.")	
 		sys.exit("Inappropriate username or password in way2sms.py file")
 	elif 'email_goes_here' in darwinfile or 'password_goes_here' in darwinfile or 'mobile_goes_here' in darwinfile:
