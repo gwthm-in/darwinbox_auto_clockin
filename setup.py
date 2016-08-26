@@ -13,10 +13,9 @@ def setup():
 	program_file = open(filepath,'r')
 	actulprogram = []
 	for line in program_file.readlines():
-		if 'path_to_program' in line: line.replace('path_to_program', pwd_path+'/darwin.py')
+		if 'path_to_program' in line: line = line.replace('path_to_program', pwd_path+'/darwin.py')
 		actulprogram.append(line)
 	program_file.close()
-	print actulprogram
 	with open(filepath,'w') as program_file:
 		for line in actulprogram:
 			program_file.write(line)
