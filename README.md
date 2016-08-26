@@ -42,30 +42,14 @@ Open [WAY2SMS.py](Way2SMS.py) file,
 #
 #
 #
-# Keep this directory under work in Documents.
-#
->  Absolutepath: `/Users/{YOUR USERNAME}/Documents/work/darwin/ `
-#
-
-##### Please chagne line 19 in com.darwinbox.Helper.plist Change my username GowthamSai to yours. #
-#
-
-      19.  <string>/Users/GowthamSai/Documents/work/darwin/darwin.py</string>
-replace the above line with your path to darwin.py
-
+# Keep this directory somewhere safe where you don't delete or rename this directory in future.
 #
 #
 # How to use:
             
-* Copy com.darwinbox.Helper.plist to /Library/LaunchDaemons/ using the command sudo cp ./com.darwinbox.Helper.plist /Library/LaunchDaemons/
+` Now run setup file. `
 
-` Now you need to launch the job. `
-        
-       $ launchctl load com.darwinbox.Helper.plist    
-    
-` Now you need to start the job. `
-
-        $ launchctl start com.darwinbox.Helper.plist
+        $ python setup.py
 
 # All done. Now, you don't need to worry about darwinbox clock in. Forget it. 
 ##
