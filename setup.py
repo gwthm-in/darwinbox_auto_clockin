@@ -34,14 +34,16 @@ def main():
 	filedir = os.path.dirname(__file__)
 	msgpath = os.path.join(filedir,'Way2SMS.py')
 	darwinpath = os.path.join(filedir,'darwin.py')
-	msgfile = open(msgpath,'r').readlines()
-	darwinfile = open(darwinpath,'r').readlines()
-	if 'mobile_number_goes_here' in msgfile or 'password_goes_here' in msgfile: 
-		mylog.log("FATAL", "Please modify way2sms.py and insert your mobile number and password before continuing.")	
-		sys.exit("Inappropriate username or password in way2sms.py file")
-	elif 'email_goes_here' in darwinfile or 'password_goes_here' in darwinfile or 'mobile_goes_here' in darwinfile:
-		mylog.log("FATAL", "Please modify darwin.py and insert your email, darwin box password and mobile before continuing.")	
-		sys.exit("Inappropriate username/password/mobile number in darwin.py file")
+	msgfiles = open(msgpath,'r').readlines()
+	darwinfiles = open(darwinpath,'r').readlines()
+	for msgfile in msgfiles:
+		if 'mobile_number_goes_here' in msgfile or 'password_goes_here' in msgfile: 
+			mylog.log("FATAL", "Please modify way2sms.py and insert your mobile number and password before continuing.")	
+			sys.exit("\n\nInappropriate username or password in way2sms.py file\n")
+	for darwinfile in darwinfiles:
+		if 'email_goes_here' in darwinfile or 'password_goes_here' in darwinfile or 'mobile_goes_here' in darwinfile:
+			mylog.log("FATAL", "Please modify darwin.py and insert your email, darwin box password and mobile before continuing.")	
+			sys.exit("\n\nInappropriate username/password/mobile number in darwin.py file\n")
 	else:
 		try:
 			import mechanize
