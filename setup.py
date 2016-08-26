@@ -16,7 +16,7 @@ def setup():
 		if 'path_to_program' in line: line.replace('path_to_program', pwd_path+'/darwin.py')
 		actulprogram.append(line)
 	program_file.close()
-	with open(filepath,'w') as program_file
+	with open(filepath,'w') as program_file:
 		program_file.write(line)
 	mylog.log("INFO", "Configuration for launched job done.", sys.exc_info()[-1].tb_lineno)	
 	os.popen("cp ./com.darwinbox.Helper.plist /Library/LaunchDaemons/")
@@ -32,8 +32,8 @@ def main():
 	filedir = os.path.dirname(__file__)
 	msgpath = os.path.join(filedir,'Way2SMS.py')
 	darwinpath = os.path.join(filedir,'darwin.py')
-	msgfile = open(msgpath,'r').readlines.()
-	darwinfile = open(darwinfile,'r').readlines.()
+	msgfile = open(msgpath,'r').readlines()
+	darwinfile = open(darwinfile,'r').readlines()
 	if 'username_goes_here' in msgfile or 'password_goes_here' in msgfile: 
 		mylog.log("FATAL", "Please modify way2sms.py and insert your mobile number and password before continuing.",sys.exc_info()[-1].tb_lineno)	
 		sys.exit("Inappropriate username or password in way2sms.py file")
