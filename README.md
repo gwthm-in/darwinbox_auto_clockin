@@ -18,13 +18,6 @@
 #
 #
 #
-# This needs
-This script needs python, Python Mechanize Library, Cookies, Your Username (Email) and Password (DarwinBox), Your Mobile and Password (Way2SMS), OSX Launchctl to run the script every 10 minutes.
-
-` Most of the times, this throws error, importing module mecahnize. So, to eliminate it: `
-  
-    sudo easy_install mechanize
-
 # How to configure:
 Open [darwin.py](darwin.py) file and Change Your Email id, Phone Number, Password
 
