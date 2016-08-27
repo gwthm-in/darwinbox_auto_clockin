@@ -49,7 +49,7 @@ Open [WAY2SMS.py](Way2SMS.py) file,
             
 ` Now run setup file. `
 
-        $ python setup.py
+        $ sudo python setup.py
 
 # All done. Now, you don't need to worry about darwinbox clock in. Forget it. 
 ##
