@@ -21,9 +21,9 @@
 # How to configure:
 Open [darwin.py](darwin.py) file and Change Your Email id, Phone Number, Password
 
-    47.    email = 'YOUR EMAIL'
-    48.    password = 'YOUR PASSWORD HERE'
-    49.    mobile = "MOBILE NUMBER HERE"
+    37.    email = 'YOUR EMAIL'
+    38.    password = 'YOUR PASSWORD HERE'
+    39.    mobile = "MOBILE NUMBER HERE"
         
 Open [WAY2SMS.py](Way2SMS.py) file, 
     
