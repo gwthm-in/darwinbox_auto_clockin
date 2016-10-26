@@ -58,16 +58,15 @@ try:
 	if br.geturl() != loginurl:
 		mylog.log("INFO", "Login Sucessful.")
 		page = br.response().read()
-		firstmatch = page.find(value)
-		startpos = page[firstmatch::-1].find('{')
-		userdata = json.loads(page[firstmatch-startpos:firstmatch+page[firstmatch:].find('}')+1].replace("'", '"'))
-		mylog.log("INFO", "User ID %s."%userdata['id'])
+		firstmatch = page[page.find('data: {user:'):page.find('data: {user:')+30]
+		user_id = firstmatch[firstmatch.find('"')+1:firstmatch.find('}')-1]
+		mylog.log("INFO", "User ID %s."%user_id)
 		has_clock_link = False
 		for link in br.links():
 			if 'clock in' in link.text.lower():
 				has_clock_link = True
 				mylog.log("INFO", "User Clocked Out.")
-				clockurl = clockurl+str(userdata['id'])
+				clockurl = clockurl+user_id
 				xhr = mechanize.Request(clockurl)
 				xhr.add_header('X-Requested-With', 'XMLHttpRequest')
 				xhr.add_header('Accept', 'application/json, text/javascript, */*')
