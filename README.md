@@ -19,18 +19,18 @@
 #
 #
 # How to configure:
-Open [darwin.py](darwin.py) file and Change Your Email id, Phone Number, Password
+Open [clockin.cfg](clockin.cfg) file and Change Your Email id, Phone Number, Password
 
-    37.    email = 'YOUR EMAIL'
-    38.    password = 'YOUR PASSWORD HERE'
-    39.    mobile = "MOBILE NUMBER HERE"
-        
-Open [WAY2SMS.py](Way2SMS.py) file, 
-    
-    23.    username = 'MOBILE NUMBER HERE'
-    24.    password = 'Way2SMS PASSWORD HERE'
+    [Darwinbox]
+    email: YOUR EMAIL HERE
+    password: YOUR PASSWORD HERE
+    mobile: MOBILE NUMBER HERE
+    sms_notif_enabled: TRUE OR FALSE
+    [Way2SMS] 
+    username: WAY2SMS LOGIN MOBILE NUMBER HERE
+    password: Way2SMS PASSWORD HERE
 
-#### save darwin.py and way2sms.py files. 
+#### save clockin.cfg file. 
 #
 #
 #
