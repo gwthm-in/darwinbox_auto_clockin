@@ -12,14 +12,13 @@ def setup():
 	pwd_path = os.popen('pwd').readlines()[0].strip()
 	mylog.log("INFO", "creating launched job for you :)")
 	filedir = os.path.dirname(__file__)
-	filepath = os.path.join(filedir,'com.darwinbox.Helper.plisttemp')
+	filepath = os.path.join(filedir,'com.darwinbox.Helper.plist')
 	program_file = open(filepath,'r')
 	actulprogram = []
 	for line in program_file.readlines():
 		if 'path_to_program' in line: line = line.replace('path_to_program', pwd_path+'/darwin.py')
 		actulprogram.append(line)
 	program_file.close()
-	filepath = os.path.join(filedir,'com.darwinbox.Helper.plist')
 	with open(filepath,'w') as program_file:
 		for line in actulprogram:
 			program_file.write(line)
